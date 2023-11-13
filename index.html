@@ -2236,7 +2236,6 @@
 		}
 
 		async function getContractDeposits(contract) {
-			console.log(`${floGlobals.tokenApiUrl}/api/v2/smartContractDeposits?contractName=${contract.name}&contractAddress=${contract.address}`)
 			const deposits = await fetchJson(`${floGlobals.tokenApiUrl}/api/v2/smartContractDeposits?contractName=${contract.name}&contractAddress=${contract.address}`)
 			return deposits.depositInfo
 		}
